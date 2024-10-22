@@ -163,6 +163,8 @@
     background: var(--Bg-Gray-Bold, #1F2122);
     color: white;
     margin-top: 2vh;
+    opacity: 1;
+
 }
 
 
@@ -294,6 +296,8 @@
     color: white;
     border-radius: 8px;
     margin: 1vh 0;
+    opacity: 1;
+
 }
 
 
@@ -474,6 +478,8 @@
         background: var(--Bg-Gray-Bold, #1F2122);
         color: white;
         margin-top: 2vh;
+        opacity: 1;
+
     }
 
 
@@ -588,6 +594,8 @@ display: none;
     line-height: 20px;
     text-align: center;
     padding: 8px 24px;
+    opacity: 1;
+
     
 }
 

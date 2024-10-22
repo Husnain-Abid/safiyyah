@@ -139,6 +139,8 @@ margin-top: 2vh ;
     color: white;
     border-radius: 8px;
     margin: 1vh 0;
+    opacity: 1;
+
 }
 
 
@@ -205,6 +207,7 @@ margin-top: 2vh ;
         line-height: 20px;
         text-align: center;
         padding: 8px 24px;
+        opacity: 1;
 
     }
 
