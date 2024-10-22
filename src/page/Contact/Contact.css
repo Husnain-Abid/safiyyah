@@ -1,0 +1,596 @@
+.content {
+    width: 100%;
+    height: calc(100% - 68px);
+    /* padding: 0 10vw; */
+}
+
+/* section 1 start  */
+
+/* section 3 start  */
+.content-section-3 {
+    width: 100%;
+    margin: 5vh 0;
+    padding: 0 10vw;
+}
+
+.content-section-3-res {
+    display: none;
+}
+
+.content-section-3 h1 {
+    font-family: var(--Pacifico);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.content-section-3 .box {
+    width: 100%;
+    background-color: #E1E3E6;
+    box-shadow: 0px 8px 32px 0px #00000029;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    margin: 2vh 0;
+}
+
+.content-section-3 .box-1 {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-section-3 .box-1 .thumbnail {
+    width: 100%;
+    /* Optional: set the width of the container */
+    display: flex;
+    /* Optional: to center the image */
+    justify-content: center;
+    /* Optional: to center the image */
+}
+
+.content-section-3 .box-1 .thumbnail img {
+    width: 100%;
+    /* Optional: set the width of the container */
+}
+
+.content-section-3 .box-2 {
+    width: 48%;
+    display: flex;
+}
+
+.content-section-3 .box-2 .video-player {
+    width: 100%;
+    /* Optional: set the width of the container */
+    display: flex;
+    /* Optional: to center the image */
+    justify-content: center;
+    /* Optional: to center the image */
+}
+
+.content-section-3 .box-2 .video-player img {
+    width: 100%;
+    /* Optional: set the width of the container */
+
+}
+
+.content-section-3 .box-3 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+
+.content-section-3 .box-3 h1 {
+    font-family: var(--Outfit);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+}
+
+.content-section-3 .box-3 p {
+    font-family: var(--Outfit);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    margin: 1vh 0;
+}
+
+.content-section-3 .box-3 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section-3 .box-3 form label {
+    font-family: var(--LabelFamilySans);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.content-section-3 .box-3 form .help {
+    display: flex;
+    gap: 5px;
+    margin: 1vh 0;
+}
+
+
+.content-section-3 .box-3 form .input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.content-section-3 .box-3 form input {
+    padding: 8px;
+    border: 1px solid var(--Border-Subtle, #D5D5D5);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.content-section-3 .box-3 form .icon {
+    position: absolute;
+    right: 10px;
+    /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: default;
+    /* Change to default since no action is needed */
+    color: var(--Icon-Color, #333);
+    /* Optional: Change color */
+}
+
+.content-section-3 .box-3 form p {
+    font-family: var(--Outfit);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    margin: 1vh 0;
+}
+
+.content-section-3 .box-3 form button {
+    width: 100%;
+    padding: 8px 12px;
+    gap: var(--SpaceXXS);
+    border-radius: 8px;
+    opacity: 0px;
+    background: var(--Bg-Gray-Bold, #1F2122);
+    color: white;
+    margin-top: 2vh;
+}
+
+
+/* section 3 end  */
+
+
+
+
+
+.footer {
+    background: var(--Bg-Gray-Subtle, #E1E3E6);
+    padding: 3vh 10vw;
+    display: flex;
+
+}
+
+.footer .box-1 {
+    width: 40%;
+    padding: 0 1vw;
+}
+
+.footer .box-1 h1 {
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.footer .box-1 p {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    margin: 2vh 0;
+
+}
+
+.footer .box-2 {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #D5D5D5;
+    padding: 2vh 2vw;
+    margin: 0 1vw;
+}
+
+.footer .box-2 .form {
+    width: 100%;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.footer .box-2 .input-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .box-2 .input-row label {
+    font-family: var(--LabelFamilySans);
+    font-size: var(--LabelSizeM);
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin: 1vh 0;
+}
+
+.footer .box-2 .input-control {
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.footer .box-2 .input-control input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: var(--InputFamilySans);
+    font-size: var(--InputSizeM);
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+    text-align: left;
+    color: var(--main-bg-color);
+}
+
+.footer .box-2 .text-area-control {
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.footer .box-2 .text-area-control textarea {
+    box-shadow: none;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: var(--InputFamilySans);
+    font-size: var(--InputSizeM);
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+    color: var(--main-bg-color);
+}
+
+.footer .box-2 button {
+    font-family: var(--LabelFamilySans);
+    font-size: var(--LabelSizeS);
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+
+    padding: 8px 12px;
+    gap: var(--SpaceXXS);
+    opacity: 0px;
+    background: var(--Bg-Gray-Bold, #1F2122);
+    color: white;
+    border-radius: 8px;
+    margin: 1vh 0;
+}
+
+
+
+
+
+/* section 5 end  */
+
+
+
+
+
+
+
+
+/* footer end  */
+
+
+/* responsive design start  */
+@media only screen and (max-width: 1024px) {
+
+    /* section 3 start  */
+    .content-section-3 {
+        display: none;
+    }
+
+    .content-section-3-res {
+        display: block;
+        padding: 0 5vw
+    }
+
+
+    .content-section-3-res h1 {
+        font-family: var(--Pacifico);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .content-section-3-res .box {
+        width: 100%;
+        display: flex;
+        margin: 2vh 0;
+        flex-direction: column;
+    }
+
+    .content-section-3-res .box-1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .content-section-3-res .box-1 .thumbnail {
+        width: 100%;
+        /* Optional: set the width of the container */
+        display: flex;
+        /* Optional: to center the image */
+        justify-content: center;
+        /* Optional: to center the image */
+    }
+
+    .content-section-3-res .box-1 .thumbnail img {
+        width: 100%;
+        /* Optional: set the width of the container */
+    }
+
+    .content-section-3-res .box-2 {
+        width: 100%;
+        display: flex;
+    }
+
+    .content-section-3-res .box-2 .video-player {
+        width: 100%;
+        /* Optional: set the width of the container */
+        display: flex;
+        /* Optional: to center the image */
+        justify-content: center;
+        /* Optional: to center the image */
+    }
+
+    .content-section-3-res .box-2 .video-player img {
+        width: 100%;
+        /* Optional: set the width of the container */
+
+    }
+
+    .content-section-3-res .box-3 {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 2vh 0;
+        justify-content: center;
+    }
+
+    .content-section-3-res .box-3 .light {
+        text-align: center;
+        padding: 0 5vw;
+    }
+
+
+    .content-section-3-res .box-3 h1 {
+        font-family: var(--Outfit);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+    .content-section-3-res .box-3 p {
+        font-family: var(--Outfit);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        margin: 1vh 0;
+    }
+
+    .content-section-3-res .box-3 form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-section-3-res .box-3 form label {
+        font-family: var(--LabelFamilySans);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+
+    }
+
+    .content-section-3-res .box-3 form .help {
+        display: flex;
+        gap: 5px;
+        margin: 1vh 0;
+    }
+
+
+    .content-section-3-res .box-3 form .input-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .content-section-3-res .box-3 form input {
+        padding: 8px;
+        border: 1px solid var(--Border-Subtle, #D5D5D5);
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .content-section-3-res .box-3 form .icon {
+        position: absolute;
+        right: 10px;
+        /* Adjust as needed */
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: default;
+        /* Change to default since no action is needed */
+        color: var(--Icon-Color, #333);
+        /* Optional: Change color */
+    }
+
+    .content-section-3-res .box-3 form p {
+        font-family: var(--Outfit);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+        margin: 1vh 0;
+    }
+
+    .content-section-3-res .box-3 form button {
+        width: 100%;
+        padding: 8px 12px;
+        gap: var(--SpaceXXS);
+        border-radius: 8px;
+        opacity: 0px;
+        background: var(--Bg-Gray-Bold, #1F2122);
+        color: white;
+        margin-top: 2vh;
+    }
+
+
+
+
+    /* section 3 end  */
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+
+    .footer {
+        flex-direction: column;
+        padding: 3vh 5vw;
+
+    }
+
+    .footer .box-1 {
+        width: 100%;
+    }
+
+    .footer .box-2 {
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+    .content-section-3-res h1 {
+        font-family: Pacifico;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+margin-top: 2vh;
+    }
+
+    .content-section-3-res .box-2 .video-player img {
+        content: url('../../../public/assest/image/res-video-player.png');
+    }
+
+    .content-section-3-res .box-3 h1 {
+        font-family: Outfit;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .content-section-3-res .box-3 p {
+        font-family: Outfit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+
+    }
+
+    .content-section-3-res .box-1 .thumbnail .t_img_1 {
+        content: url('../../../public/assest/image/res_thumbnail_1.png');
+    }
+
+    .content-section-3-res .box-1 .thumbnail .t_img_2 {
+        content: url('../../../public/assest/image/res_thumbnail_2.png');
+    }
+
+    .content-section-3-res .box-1 .thumbnail .t_img_3 {
+        content: url('../../../public/assest/image/res_thumbnail_3.png');
+    }
+
+    .content-section-3-res .box-3 form label {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .content-section-3-res .box-3 form p {
+        font-family: Outfit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+
+    }
+    .footer {
+    background: none;
+    }
+    .footer .box-1 div {
+display: none;
+    }
+
+    .footer .box-2 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .footer .box-2 button{
+    font-family: var(--LabelFamilySans);
+    font-size: var(--LabelSizeS);
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    padding: 8px 24px;
+    
+}
+
+}
+
+/* responsive design end  */
