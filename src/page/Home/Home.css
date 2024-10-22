@@ -428,13 +428,13 @@
     background-color: white;
 }
 
-.footer .box-2 .input-row {
+.footer .box-2 .form .input-row {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.footer .box-2 .input-row label {
+.footer .box-2 .form .input-row label {
     font-family: var(--LabelFamilySans);
     font-size: var(--LabelSizeM);
     font-weight: 600;
@@ -443,14 +443,14 @@
     margin: 1vh 0;
 }
 
-.footer .box-2 .input-control {
+.footer .box-2 .form .input-control {
     width: 100%;
     border: 1px solid #D5D5D5;
     padding: 10px;
     border-radius: 8px;
 }
 
-.footer .box-2 .input-control input {
+.footer .box-2 .form .input-control input {
     width: 100%;
     border: none;
     background: none;
@@ -465,14 +465,14 @@
     color: var(--main-bg-color);
 }
 
-.footer .box-2 .text-area-control {
+.footer .box-2 .form .text-area-control {
     width: 100%;
     border: 1px solid #D5D5D5;
     padding: 10px;
     border-radius: 8px;
 }
 
-.footer .box-2 .text-area-control textarea {
+.footer .box-2 .form .text-area-control textarea {
     box-shadow: none;
     resize: none;
     width: 100%;
@@ -489,17 +489,15 @@
     color: var(--main-bg-color);
 }
 
-.footer .box-2 button {
-    font-family: var(--LabelFamilySans);
-    font-size: var(--LabelSizeS);
+.footer .box-2 .form .form-btn button {
+    font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     text-align: center;
 
     padding: 8px 12px;
-    gap: var(--SpaceXXS);
     opacity: 0px;
-    background: var(--Bg-Gray-Bold, #1F2122);
+    background-color:  #1F2122;
     color: white;
     border-radius: 8px;
     margin: 1vh 0;
@@ -531,7 +529,8 @@
 
     .section-3-res {
         display: block;
-        padding: 0 5vw
+        padding: 0 5vw;
+        margin: 2vh 0;
     }
 
 

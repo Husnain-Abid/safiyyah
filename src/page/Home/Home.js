@@ -302,9 +302,12 @@ export default function Home() {
 
                                     </div>
                                 </div>
-<div> 
+
+<div className='form-btn'>
                                 <button>Submit</button>
-    </div>
+
+</div>
+
                             </div>
 
 
