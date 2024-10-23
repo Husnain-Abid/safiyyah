@@ -185,12 +185,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+ 
+
 }
 
 .content .section-3 .box-2 .video-player video {
     width: 100%; /* Makes video fill the container */
-    height: auto; /* Maintains aspect ratio */
+    height: 300px !important; /* Maintains aspect ratio */
     border-radius: 8px;
+object-fit: fill;
+
 }
 
 

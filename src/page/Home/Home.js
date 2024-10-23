@@ -76,18 +76,18 @@ export default function Home() {
                             </div>
 
                             <div className='box-2'>
-                            <div className='video-player'>
-    <video 
-        src={`${imgRoute}/video-player.mp4`} // Update with your video file name
-        width="553"
-        height="300"
-        controls // Add controls if you want playback options
-        style={{ maxWidth: '100%', height: 'auto' }} // Make it responsive   
-        muted // This mutes the video
-   >
-        Your browser does not support the video tag.
-    </video>
-</div>
+                                <div className='video-player'>
+                                    <video
+                                        src={`${imgRoute}/video-player.mp4`} // Update with your video file name
+                                        width="553"
+                                        height="300"
+                                        controls // Add controls if you want playback options
+                                        style={{ maxWidth: '100%', height: 'auto' }} // Make it responsive   
+                                        muted // This mutes the video
+                                    >
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
 
 
                             </div>
@@ -149,25 +149,27 @@ export default function Home() {
 
                             <div className='box-2'>
                                 <div className='video-player'>
-                                <video 
-        src={`${imgRoute}/video-player.mp4`} // Update with your video file name
-        width="553"
-        height="300"
-        controls // Add controls if you want playback options
-        style={{ maxWidth: '100%', height: 'auto' }} // Make it responsive   
-        muted // This mutes the video
-   >
-        Your browser does not support the video tag.
-    </video>
-
+                                <video
+                                        src={`${imgRoute}/video-player.mp4`} // Update with your video file name
+                                        width="553"
+                                        height="300"
+                                        controls // Add controls if you want playback options
+                                        style={{ maxWidth: '100%', height: 'auto' }} // Make it responsive   
+                                        muted // This mutes the video
+                                    >
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
+
+
+                                
 
 
 
 
                             </div>
 
-                          
+
 
 
                             <div className='box-1'>
@@ -184,13 +186,13 @@ export default function Home() {
 
                             <div className='box-3'>
                                 <form>
-                                <div className='light'>
-                                    <h1>The Moon Shot on Iphone</h1>
+                                    <div className='light'>
+                                        <h1>The Moon Shot on Iphone</h1>
 
-                                    <p>The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. </p>
+                                        <p>The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. </p>
 
-                                </div>
-                                    
+                                    </div>
+
                                     <button>Password for full portfolio</button>
 
                                 </form>
@@ -330,7 +332,7 @@ export default function Home() {
 
                                     </div>
                                 </div>
-       
+
 
 
                             </div>
