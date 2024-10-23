@@ -128,6 +128,8 @@ body {
 
   .navbar .links li {
     padding: 0 10vw;
+    font-size: 20px;
+margin: 2vh 0;
   }
 
   .navbar .links.show {
