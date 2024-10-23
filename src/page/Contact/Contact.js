@@ -8,11 +8,11 @@ export default function Contact() {
     return (
         <>
             <Layout>
-                <div className='content'>
+                <div className='contact'>
 
                  
 
-                    <div className='content-section-3'>
+                    <div className='contact-section-3'>
 
                         <h1>Some of My Work</h1>
 

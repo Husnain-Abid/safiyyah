@@ -20,9 +20,9 @@ export default function Contact() {
                         <div className='box-1'>
                             <h1>Want to collaborate?</h1>
 
-                            <p>I’m always looking for opportunities to create best in class, meaningful creative communications with ambitious organizations big and small, local and global and make work that resonates and leaves its mark on its audiences.</p>
-
-
+                            <p>I’m always looking for opportunities to create best in class, meaningful creative communications with ambitious organizations big and small, local and global 
+                           and make work that resonates and leaves its mark on its audiences.
+</p>
 
 
                         </div>
@@ -54,10 +54,20 @@ export default function Contact() {
 
                                     </div>
                                 </div>
-<div className='work-btn'>
+                                <div className='work-btn'>
 
-                                <button>Submit</button>
-</div>
+                                    <button>Submit</button>
+                                </div>
+
+                                <div className='linkedIn-btn'>
+                                    <h6>Connect on LinkedIn</h6>
+
+                                    <div >
+                                        <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
+
+                                    </div>
+                                </div>
+
 
                             </div>
 

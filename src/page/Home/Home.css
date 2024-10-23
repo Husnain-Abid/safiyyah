@@ -5,21 +5,21 @@
 }
 
 /* section 1 start  */
-.section-1 {
+.content .section-1 {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.section-1 .box-1 {
+.content .section-1 .box-1 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 2vh 0;
 }
 
-.section-1 .box-1 h1 {
+.content .section-1 .box-1 h1 {
     font-family: var(--Outfit);
     font-size: 48px;
     font-weight: 700;
@@ -29,28 +29,27 @@
     text-align: center;
 }
 
-.section-1 .box-1 h1 span {
+.content .section-1 .box-1 h1 span {
     color: var(--font-color-1);
 }
 
-.section-1 .box-1 p {
+.content .section-1 .box-1 p {
     font-family: var(--Outfit);
     font-size: 14px;
     font-weight: 400;
     line-height: 27.5px;
     text-align: center;
-    margin: 24px 0;
     width: 40%;
     display: flex;
     justify-content: center;
 }
 
-.section-1 .box-2 {
+.content .section-1 .box-2 {
     width: 100%;
     display: flex;
 }
 
-.section-1 .box-2 img {
+.content .section-1 .box-2 img {
     width: 100%;
     /* Default width */
     height: 301px;
@@ -59,13 +58,15 @@
     float: right;
 }
 
-
+.content .section-1 .box-2 img:hover {
+    content: url('../../../public/assest/image/img_1_hover.png');
+}
 
 /* section 1 end  */
 
 
 /* section 2 start  */
-.section-2 {
+.content .section-2 {
     width: 100%;
     padding: 0 10vw;
     display: flex;
@@ -76,12 +77,12 @@
 
 }
 
-.section-2 .box {
+.content .section-2 .box {
     width: 33%;
 
 }
 
-.section-2 .card {
+.content .section-2 .card {
     width: 100%;
     background-color: var(--third-bg-color);
     border-radius: 8px;
@@ -90,19 +91,22 @@
     justify-content: space-around;
     align-items: center;
     padding: 1vh 0;
+    background-color: #1F2122;
+    color: white;
 
 }
 
-.section-2 .card h4 {
+.content .section-2 .card h4 {
     font-family: var(--Roboto);
     font-size: 16px;
     font-weight: 700;
     line-height: 19.2px;
     text-align: center;
-
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.section-2 .card p {
+.content .section-2 .card p {
     font-family: var(--Roboto);
     font-size: 18px;
     font-weight: 400;
@@ -110,7 +114,7 @@
     text-align: center;
 }
 
-.section-2 .card p {
+.content .section-2 .card p {
     font-family: var(--Roboto);
     font-size: 18px;
     font-weight: 400;
@@ -123,17 +127,17 @@
 
 
 /* section 3 start  */
-.section-3 {
+.content .section-3 {
     width: 100%;
     margin: 10vh 0;
     padding: 0 10vw;
 }
 
-.section-3-res {
+.content .section-3-res {
     display: none;
 }
 
-.section-3 h1 {
+.content .section-3 h1 {
     font-family: var(--Pacifico);
     font-size: 25px;
     font-weight: 400;
@@ -141,7 +145,7 @@
     text-align: center;
 }
 
-.section-3 .box {
+.content .section-3 .box {
     width: 100%;
     background-color: #E1E3E6;
     box-shadow: 0px 8px 32px 0px #00000029;
@@ -151,14 +155,14 @@
     margin: 2vh 0;
 }
 
-.section-3 .box-1 {
+.content .section-3 .box-1 {
     width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.section-3 .box-1 .thumbnail {
+.content .section-3 .box-1 .thumbnail {
     width: 100%;
     /* Optional: set the width of the container */
     display: flex;
@@ -167,39 +171,37 @@
     /* Optional: to center the image */
 }
 
-.section-3 .box-1 .thumbnail img {
+.content .section-3 .box-1 .thumbnail img {
     width: 100%;
     /* Optional: set the width of the container */
 }
 
-.section-3 .box-2 {
+.content .section-3 .box-2 {
     width: 48%;
     display: flex;
 }
 
-.section-3 .box-2 .video-player {
+.content .section-3 .box-2 .video-player {
     width: 100%;
-    /* Optional: set the width of the container */
     display: flex;
-    /* Optional: to center the image */
     justify-content: center;
-    /* Optional: to center the image */
 }
 
-.section-3 .box-2 .video-player img {
-    width: 100%;
-    /* Optional: set the width of the container */
-
+.content .section-3 .box-2 .video-player video {
+    width: 100%; /* Makes video fill the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
 }
 
-.section-3 .box-3 {
+
+.content .section-3 .box-3 {
     width: 40%;
     display: flex;
     flex-direction: column;
     padding: 0 2vw;
 }
 
-.section-3 .box-3 h1 {
+.content .section-3 .box-3 h1 {
     font-family: var(--Outfit);
     font-size: 20px;
     font-weight: 400;
@@ -207,7 +209,7 @@
     text-align: left;
 }
 
-.section-3 .box-3 p {
+.content .section-3 .box-3 p {
     font-family: var(--Outfit);
     font-size: 14px;
     font-weight: 400;
@@ -216,12 +218,12 @@
     margin: 1vh 0;
 }
 
-.section-3 .box-3 form {
+.content .section-3 .box-3 form {
     display: flex;
     flex-direction: column;
 }
 
-.section-3 .box-3 form label {
+.content .section-3 .box-3 form label {
     font-family: var(--LabelFamilySans);
     font-size: 14px;
     font-weight: 600;
@@ -230,26 +232,26 @@
 
 }
 
-.section-3 .box-3 form .help {
+.content .section-3 .box-3 form .help {
     display: flex;
     gap: 5px;
     margin: 1vh 0;
 }
 
 
-.section-3 .box-3 form .input-container {
+.content .section-3 .box-3 form .input-container {
     position: relative;
     display: inline-block;
 }
 
-.section-3 .box-3 form input {
+.content .section-3 .box-3 form input {
     padding: 8px;
     border: 1px solid var(--Border-Subtle, #D5D5D5);
     border-radius: 8px;
     width: 100%;
 }
 
-.section-3 .box-3 form .icon {
+.content .section-3 .box-3 form .icon {
     position: absolute;
     right: 10px;
     /* Adjust as needed */
@@ -261,7 +263,7 @@
     /* Optional: Change color */
 }
 
-.section-3 .box-3 form p {
+.content .section-3 .box-3 form p {
     font-family: var(--Outfit);
     font-size: 14px;
     font-weight: 400;
@@ -270,7 +272,12 @@
     margin: 1vh 0;
 }
 
-.section-3 .box-3 form button {
+.content .section-3 .box-3 form p a {
+    color: rgb(52, 52, 190);
+    text-decoration: none;
+}
+
+.content .section-3 .box-3 form button {
     width: 100%;
     padding: 8px 12px;
     gap: var(--SpaceXXS);
@@ -289,7 +296,7 @@
 
 
 /* section 4 start  */
-.section-4 {
+.content .section-4 {
     width: 100%;
     padding: 5vh 10vw;
     display: flex;
@@ -302,7 +309,7 @@
 
 }
 
-.section-4 h1 {
+.content .section-4 h1 {
     font-family: Pacifico;
     font-size: 25px;
     font-weight: 400;
@@ -314,7 +321,7 @@
 
 
 
-.section-4 .box {
+.content .section-4 .box {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -322,21 +329,20 @@
     padding: 0 5vw;
 }
 
-.section-4 .card {
-    width: 100%;
+.content .section-4 .card {
     background-color: white;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2vh 3vw;
-    width: 30%;
-
+    padding: 2vh 1vw;
+    width: 31.5%;
+    box-shadow: 0px 8px 16px 0px #0000001F;
 
 }
 
-.section-4 .card h4 {
+.content .section-4 .card h4 {
     font-family: var(--Outfit);
     font-size: 16px;
     font-weight: 700;
@@ -345,11 +351,11 @@
 
 }
 
-.section-4 .card p {
+.content .section-4 .card p {
     font-family: var(--Outfit);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 27.5px;
+    line-height: 19.5px;
     text-align: center;
 }
 
@@ -390,6 +396,10 @@
 
 }
 
+.footer .linkedIn-btn {
+    display: none;
+}
+
 .footer .box-1 {
     width: 40%;
     padding: 0 1vw;
@@ -426,8 +436,6 @@
 
 .footer .box-2 .form {
     width: 100%;
-    border-radius: 50px;
-    background-color: white;
 }
 
 .footer .box-2 .form .input-row {
@@ -450,6 +458,7 @@
     border: 1px solid #D5D5D5;
     padding: 10px;
     border-radius: 8px;
+    background-color: white;
 }
 
 .footer .box-2 .form .input-control input {
@@ -472,6 +481,7 @@
     border: 1px solid #D5D5D5;
     padding: 10px;
     border-radius: 8px;
+    background-color: white;
 }
 
 .footer .box-2 .form .text-area-control textarea {
@@ -492,14 +502,13 @@
 }
 
 .footer .box-2 .form .form-btn button {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 20px;
     text-align: center;
 
     padding: 8px 12px;
-    opacity: 0px;
-    background-color:  #1F2122;
+    background-color: #1F2122;
     color: white;
     border-radius: 8px;
     margin: 1vh 0;
@@ -526,18 +535,22 @@
 @media only screen and (max-width: 1024px) {
 
     /* section 3 start  */
-    .section-3 {
+    .content .section-3 {
         display: none;
     }
 
-    .section-3-res {
+    .content .section-3-res {
         display: block;
-        padding: 0 5vw;
-        margin: 2vh 0;
+        padding: 3vh 5vw;
+        margin: 5vh 0;
+        background-color: #F6F7F8;
+        box-shadow: 0px 8px 16px 0px #0000001F;
+
+
     }
 
 
-    .section-3-res h1 {
+    .content .section-3-res h1 {
         font-family: var(--Pacifico);
         font-size: 25px;
         font-weight: 400;
@@ -545,21 +558,22 @@
         text-align: center;
     }
 
-    .section-3-res .box {
+    .content .section-3-res .box {
         width: 100%;
         display: flex;
         margin: 2vh 0;
         flex-direction: column;
     }
 
-    .section-3-res .box-1 {
+    .content .section-3-res .box-1 {
         width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 10px;
+        margin: 2vh 0;
     }
 
-    .section-3-res .box-1 .thumbnail {
+    .content .section-3-res .box-1 .thumbnail {
         width: 100%;
         /* Optional: set the width of the container */
         display: flex;
@@ -568,17 +582,17 @@
         /* Optional: to center the image */
     }
 
-    .section-3-res .box-1 .thumbnail img {
+    .content .section-3-res .box-1 .thumbnail img {
         width: 100%;
         /* Optional: set the width of the container */
     }
 
-    .section-3-res .box-2 {
+    .content .section-3-res .box-2 {
         width: 100%;
         display: flex;
     }
 
-    .section-3-res .box-2 .video-player {
+    .content .section-3-res .box-2 .video-player {
         width: 100%;
         /* Optional: set the width of the container */
         display: flex;
@@ -587,13 +601,14 @@
         /* Optional: to center the image */
     }
 
-    .section-3-res .box-2 .video-player img {
+    .content .section-3-res .box-2 .video-player video {
         width: 100%;
+        border-radius: 8px;
         /* Optional: set the width of the container */
 
     }
 
-    .section-3-res .box-3 {
+    .content .section-3-res .box-3 {
         width: 100%;
         display: flex;
         text-align: center;
@@ -601,20 +616,20 @@
         justify-content: center;
     }
 
-    .section-3-res .box-3 .light {
+    .content .section-3-res .box-3 .light {
         text-align: center;
         padding: 0 5vw;
     }
 
 
-    .section-3-res .box-3 h1 {
+    .content .section-3-res .box-3 h1 {
         font-family: var(--Outfit);
         font-size: 20px;
         font-weight: 400;
         line-height: 19.6px;
     }
 
-    .section-3-res .box-3 p {
+    .content .section-3-res .box-3 p {
         font-family: var(--Outfit);
         font-size: 14px;
         font-weight: 400;
@@ -622,12 +637,12 @@
         margin: 1vh 0;
     }
 
-    .section-3-res .box-3 form {
+    .content .section-3-res .box-3 form {
         display: flex;
         flex-direction: column;
     }
 
-    .section-3-res .box-3 form label {
+    .content .section-3-res .box-3 form label {
         font-family: var(--LabelFamilySans);
         font-size: 14px;
         font-weight: 600;
@@ -636,26 +651,26 @@
 
     }
 
-    .section-3-res .box-3 form .help {
+    .content .section-3-res .box-3 form .help {
         display: flex;
         gap: 5px;
         margin: 1vh 0;
     }
 
 
-    .section-3-res .box-3 form .input-container {
+    .content .section-3-res .box-3 form .input-container {
         position: relative;
         display: inline-block;
     }
 
-    .section-3-res .box-3 form input {
+    .content .section-3-res .box-3 form input {
         padding: 8px;
         border: 1px solid var(--Border-Subtle, #D5D5D5);
         border-radius: 8px;
         width: 100%;
     }
 
-    .section-3-res .box-3 form .icon {
+    .content .section-3-res .box-3 form .icon {
         position: absolute;
         right: 10px;
         /* Adjust as needed */
@@ -667,7 +682,7 @@
         /* Optional: Change color */
     }
 
-    .section-3-res .box-3 form p {
+    .content .section-3-res .box-3 form p {
         font-family: var(--Outfit);
         font-size: 14px;
         font-weight: 400;
@@ -676,7 +691,7 @@
         margin: 1vh 0;
     }
 
-    .section-3-res .box-3 form button {
+    .content .section-3-res .box-3 form button {
         width: 100%;
         padding: 8px 12px;
         gap: var(--SpaceXXS);
@@ -700,29 +715,43 @@
 
 @media only screen and (max-width: 800px) {
 
-    .section-1 .box-1 {
+    .content .section-1 .box-1 {
         padding: 0 5vw;
     }
 
-    .section-1 .box-1 p {
+    .content .section-1 .box-1 p {
         width: 100%;
     }
 
-    .section-2 {
+    .content .section-2 {
         flex-direction: column;
         padding: 0 5vw;
 
     }
 
-    .section-2 .box {
+    .content .section-2 .box {
         width: 100%;
     }
 
-    .section-4 {
-        display: none;
+    .content .section-4 {
+
+        background: none;
+        padding: 0 5vw;
+
     }
 
-    .section-5 {
+    .content .section-4 .box {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .content .section-4 .card {
+        width: 100%;
+        padding: 2vh 2vw;
+    }
+
+    .content .section-5 {
         display: none;
     }
 
@@ -746,30 +775,36 @@
 
 
 @media only screen and (max-width: 500px) {
-    .section-1 .box-2 {
+    .content .section-1 .box-2 {
         width: 100%;
         height: 150px;
         margin: 20px 0;
     }
 
-    .section-1 .box-2 img {
-        content: url('../../../public/assest/image/res_img_1.jpeg');
+    .content .section-1 .box-2 img {
+        content: url('../../../public/assest/image/res_img_1.png');
         height: 150px;
         width: 100%;
         object-fit: cover;
     }
 
-    .section-1 .box-1 h1 {
+    .content .section-1 .box-2 img:hover {
+        content: url('../../../public/assest/image/res_img_1.png');
+
+    }
+
+    .content .section-1 .box-1 h1 {
         font-family: Outfit;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 30px;
         text-align: center;
-        padding: 0 10vw;
+        padding: 0 5vw;
+        margin-top: 0;
     }
 
 
-    .section-1 .box-1 p {
+    .content .section-1 .box-1 p {
 
         font-family: Outfit;
         font-size: 14px;
@@ -779,23 +814,23 @@
         margin: 0;
     }
 
-    .section-2 {
+    .content .section-2 {
         margin: 2vh 0;
     }
 
-    .section-2 .card {
+    .content .section-2 .card {
         margin: .8vh 0;
     }
 
-    .section-2 .card img {
+    .content .section-2 .card img {
         width: 24px;
     }
 
-    .section-2 .card h4 {
+    .content .section-2 .card h4 {
         font-size: 14px;
     }
 
-    .section-3-res h1 {
+    .content .section-3-res h1 {
         font-family: Pacifico;
         font-size: 20px;
         font-weight: 400;
@@ -803,11 +838,11 @@
         text-align: center;
     }
 
-    .section-3-res .box-2 .video-player img {
+    /* .content .section-3-res .box-2 .video-player img {
         content: url('../../../public/assest/image/res-video-player.png');
-    }
+    } */
 
-    .section-3-res .box-3 h1 {
+    .content .section-3-res .box-3 h1 {
         font-family: Outfit;
         font-size: 20px;
         font-weight: 700;
@@ -815,7 +850,7 @@
         text-align: center;
     }
 
-    .section-3-res .box-3 p {
+    .content .section-3-res .box-3 p {
         font-family: Outfit;
         font-size: 14px;
         font-weight: 400;
@@ -824,55 +859,92 @@
 
     }
 
-    .section-3-res .box-1 .thumbnail .t_img_1 {
+    .content .section-3-res .box-1 .thumbnail .t_img_1 {
         content: url('../../../public/assest/image/res_thumbnail_1.png');
     }
 
-    .section-3-res .box-1 .thumbnail .t_img_2 {
+    .content .section-3-res .box-1 .thumbnail .t_img_2 {
         content: url('../../../public/assest/image/res_thumbnail_2.png');
     }
 
-    .section-3-res .box-1 .thumbnail .t_img_3 {
+    .content .section-3-res .box-1 .thumbnail .t_img_3 {
         content: url('../../../public/assest/image/res_thumbnail_3.png');
     }
 
-    .section-3-res .box-3 form label {
+    .content .section-3-res .box-3 form label {
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
         text-align: left;
     }
 
-    .section-3-res .box-3 form p {
+    .content .section-3-res .box-3 form p {
         font-family: Outfit;
         font-size: 14px;
         font-weight: 400;
         line-height: 19.6px;
-        text-align: left;
+        text-align: center;
+        margin: 2vh 0;
 
     }
+
     .footer {
-    background: none;
+        background-color: #F6F7F8;
+
     }
+
     .footer .box-1 div {
-display: none;
+        display: none;
     }
 
     .footer .box-2 {
-    border: none;
-    margin: 0;
-    padding: 0;
+        border: none;
+        margin: 0;
+        padding: 0;
     }
 
-    .footer .box-2 button{
-    font-family: var(--LabelFamilySans);
-    font-size: var(--LabelSizeS);
-    font-weight: 600;
-    line-height: 20px;
-    text-align: center;
-    padding: 8px 24px;
-    opacity: 1;
-}
+    .footer .box-1 h1 {
+        margin: 2vh 0;
+        text-align: center;
+
+    }
+
+    .footer .box-1 p {
+        display: none;
+    }
+    .footer .box-2 .form {
+    background-color: #F6F7F8;
+    }
+
+    .footer .box-2 button {
+        font-family: var(--LabelFamilySans);
+        font-size: var(--LabelSizeS);
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        padding: 8px 24px;
+        opacity: 1;
+
+    }
+
+    .footer .linkedIn-btn {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin: 2vh 0;
+    }
+
+    .footer .linkedIn-btn h6 {
+        font-family: Outfit;
+        font-size: var(--BodySizeL);
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+
+    }
+
+
 
 }
 
