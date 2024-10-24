@@ -329,10 +329,9 @@ export default function Home() {
                             <div className='box-3'>
                                 <form>
                                     <div className='light'>
-                                        <h1>The Moon Shot on Iphone</h1>
+                                    <h1>{currentDes.heading}</h1>
 
-                                        <p>The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. </p>
-
+<p>{currentDes.para} </p>
                                     </div>
 
                                     <button>Password for full portfolio</button>
