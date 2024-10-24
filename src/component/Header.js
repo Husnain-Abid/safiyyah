@@ -15,7 +15,7 @@ export default function Header() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='logo'>
-                        <Link to="/">
+                        <Link to="/home">
                             <img src={`${imgRoute}/logo.svg`} alt='logo'/>
 
                         </Link>
@@ -29,7 +29,7 @@ export default function Header() {
                         />
 
                         <ul className={`links ${show ? 'show' : ''}`}>
-                            <li><Link to="/" onClick={() => setShow(false)}>Home</Link></li>
+                            <li><Link to="/home" onClick={() => setShow(false)}>Home</Link></li>
                             <li><Link to="/about" onClick={() => setShow(false)}>About</Link></li>
                             {/* <li><Link to="/work" onClick={() => setShow(false)}>My Work </Link></li> */}
                             <li><Link to="/contact" onClick={() => setShow(false)}>Contact</Link></li>

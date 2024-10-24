@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../../component/Layout'
 import ASSET_PATHS from '../../constant'
 import './Home.css';
@@ -6,6 +6,92 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     const imgRoute = ASSET_PATHS.IMG_URL
+
+
+
+    const videoData = [
+        {
+            videoSrc: "video-player.mp4",
+            thumbnail: "thumbnail_1",
+            title: "Video 1",
+            des: {
+                heading: "The Moon Shot on Iphone",
+                para: "The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. ",
+            }
+        },
+        {
+            videoSrc: "video-player-2.mp4",
+            thumbnail: "thumbnail_2",
+            title: "Video 2",
+            des: {
+                heading: "Last Light",
+                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+            }
+
+
+        },
+        {
+            videoSrc: "video-player.mp4",
+            thumbnail: "thumbnail_3",
+            title: "Video 3",
+            des: {
+                heading: "Project 3",
+                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+            }
+
+        },
+
+    ];
+
+    const resVideoData = [
+        {
+            videoSrc: "video-player.mp4",
+            thumbnail: "res_thumbnail_1",
+            title: "Video 1",
+            des: {
+                heading: "The Moon Shot on Iphone",
+                para: "The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. ",
+            },
+            c: "t_img_1"
+
+        },
+        {
+            videoSrc: "video-player-2.mp4",
+            thumbnail: "res_thumbnail_2",
+            title: "Video 2",
+            des: {
+                heading: "Last Light",
+                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+            },
+            c: "t_img_2"
+
+        },
+        {
+            videoSrc: "video-player.mp4",
+            thumbnail: "res_thumbnail_3",
+            title: "Video 3",
+            des: {
+                heading: "Project 3",
+                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+            },
+            c: "t_img_3"
+        },
+
+    ];
+
+
+
+
+    const [currentVideo, setCurrentVideo] = useState(videoData[0].videoSrc);
+    const [currentDes, setCurrentDes] = useState(videoData[0].des);
+
+    const handleVideoClick = (video) => {
+        setCurrentVideo(video.videoSrc);
+        setCurrentDes(video.des);
+    };
+
+
+
     return (
         <>
             <Layout>
@@ -64,21 +150,53 @@ export default function Home() {
                         <div className='box'>
 
                             <div className='box-1'>
-                                <div className='thumbnail'>
-                                    <img src={`${imgRoute}/thumbnail_1.png`} alt='img_1'></img>
-                                </div>
-                                <div className='thumbnail'>
-                                    <img src={`${imgRoute}/thumbnail_2.png`} alt='img_2'></img>
-                                </div>
-                                <div className='thumbnail'>
-                                    <img src={`${imgRoute}/thumbnail_3.png`} alt='img_3'></img>
-                                </div>
+
+                                {videoData.map((video, index) => (
+
+
+
+                                    // <div className='thumbnail'>
+                                    //     <img src={`${imgRoute}/thumbnail_1.png`} alt='img_1'></img>
+                                    // </div>
+                                    // <div className='thumbnail'>
+                                    //     <img src={`${imgRoute}/thumbnail_2.png`} alt='img_2'></img>
+                                    // </div>
+                                    // <div className='thumbnail'>
+                                    //     <img src={`${imgRoute}/thumbnail_3.png`} alt='img_3'></img>
+                                    // </div>
+
+                                    <div className='thumbnail' key={index}
+                                        onClick={() => handleVideoClick(video)}>
+
+                                        <img
+                                            src={`${imgRoute}/${video.thumbnail}.png`}
+                                            alt={`Thumbnail for ${video.title}`}
+                                            style={{ width: "100px", cursor: "pointer" }}
+                                        />
+
+                                        {/* <div className="thumbnail-title">
+                                            {video.title}
+                                        </div> */}
+
+                                        <div className="play-icon">
+                                            <img src={`${imgRoute}/play.svg`} alt='img_1'></img>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                ))}
+
+
                             </div>
 
                             <div className='box-2'>
                                 <div className='video-player'>
                                     <video
-                                        src={`${imgRoute}/video-player.mp4`} // Update with your video file name
+                                        src={`${imgRoute}/${currentVideo}`} // Update with your video file name
                                         width="553"
                                         height="300"
                                         controls // Add controls if you want playback options
@@ -89,15 +207,14 @@ export default function Home() {
                                     </video>
                                 </div>
 
-
                             </div>
 
                             <div className='box-3'>
 
                                 <div className='light'>
-                                    <h1>The Moon Shot on Iphone</h1>
+                                    <h1>{currentDes.heading}</h1>
 
-                                    <p>The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. </p>
+                                    <p>{currentDes.para} </p>
 
                                 </div>
 
@@ -149,8 +266,8 @@ export default function Home() {
 
                             <div className='box-2'>
                                 <div className='video-player'>
-                                <video
-                                        src={`${imgRoute}/video-player.mp4`} // Update with your video file name
+                                    <video
+                                        src={`${imgRoute}/${currentVideo}`} // Update with your video file name
                                         width="553"
                                         height="300"
                                         controls // Add controls if you want playback options
@@ -159,11 +276,11 @@ export default function Home() {
                                     >
                                         Your browser does not support the video tag.
                                     </video>
+
+
+
+
                                 </div>
-
-
-                                
-
 
 
 
@@ -173,15 +290,40 @@ export default function Home() {
 
 
                             <div className='box-1'>
-                                <div className='thumbnail'>
-                                    <img src={`${imgRoute}/thumbnail_1.png`} className='t_img_1' alt='img_1'></img>
-                                </div>
-                                <div className='thumbnail'>
-                                    <img src={`${imgRoute}/thumbnail_2.png`} className='t_img_2' alt='img_2'></img>
-                                </div>
-                                <div className='thumbnail'>
-                                    <img src={`${imgRoute}/thumbnail_3.png`} className='t_img_3' alt='img_3'></img>
-                                </div>
+
+
+                                {resVideoData.map((video, index) => (
+
+
+
+
+                                    <div className='thumbnail' key={index}
+                                        onClick={() => handleVideoClick(video)}>
+
+                                        <img
+                                            src={`${imgRoute}/${video.thumbnail}.png`}
+                                            alt={`Thumbnail for ${video.title}`}
+                                            style={{ width: "100px", cursor: "pointer" }}
+                                            className={`${video.c}`}
+                                        />
+
+                                        {/* <div className="thumbnail-title">
+        {video.title}
+    </div> */}
+
+                                        <div className="play-icon">
+                                            <img src={`${imgRoute}/play.svg`} alt='img_1'></img>
+                                        </div>
+
+
+
+                                    </div>
+
+                                ))}
+
+
+
+
                             </div>
 
                             <div className='box-3'>
