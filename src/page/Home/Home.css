@@ -56,10 +56,17 @@
     /* Default height */
     max-width: 100%;
     float: right;
+
+    filter: grayscale(100%); /* Apply grayscale filter on hover */
+    transition: filter 0.1s; /* Smooth transition */
+
+
 }
 
 .content .section-1 .box-2 img:hover {
-    content: url('../../../public/assest/image/img_1_hover.png');
+    
+    filter: grayscale(0%); /* Apply grayscale filter on hover */
+
 }
 
 /* section 1 end  */
@@ -792,10 +799,6 @@ object-fit: fill;
         object-fit: cover;
     }
 
-    .content .section-1 .box-2 img:hover {
-        content: url('../../../public/assest/image/res_img_1.png');
-
-    }
 
     .content .section-1 .box-1 h1 {
         font-family: Outfit;
