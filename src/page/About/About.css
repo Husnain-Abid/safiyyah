@@ -27,7 +27,16 @@
     /* Make the image take up the full width of the container */
     height: auto;
     /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Apply grayscale filter on hover */
+    transition: filter 0.1s; /* Smooth transition */
+
 }
+
+.about-section .box-1 .img_container img:hover {
+    filter: grayscale(0%); /* Apply grayscale filter on hover */
+}
+
+
 
 .about-section .box-2 {
     width: 100%;

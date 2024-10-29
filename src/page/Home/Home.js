@@ -10,33 +10,36 @@ export default function Home() {
 
 
     const videoData = [
-        {
-            videoSrc: "video-player.mp4",
-            thumbnail: "thumbnail_1",
-            title: "Video 1",
-            des: {
-                heading: "The Moon Shot on Iphone",
-                para: "The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. ",
-            }
-        },
+
         {
             videoSrc: "video-player-2.mp4",
             thumbnail: "thumbnail_2",
             title: "Video 2",
             des: {
-                heading: "Last Light",
-                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+                heading: "The Moon Shot on iPhone",
+                para: "The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone.",
             }
 
-
+        },
+        {
+            videoSrc: "video-player.mp4",
+            thumbnail: "thumbnail_1",
+            title: "Video 1",
+            des: {
+                heading: "Fireworks",
+                para: `Part of a government-sponsored initiative to counter terrorism and change sentiments in Saudi Arabia. The film “Fireworks” got global acclaim as “one of the best non-profit commercials of the year”.`,
+            }
         },
         {
             videoSrc: "video-player.mp4",
             thumbnail: "thumbnail_3",
             title: "Video 3",
             des: {
-                heading: "Project 3",
-                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+                heading: "MBC1 Comedy",
+                para: `The idea for this campaign is that MBC1's content is so good that it stays with its viewers long after they’ve stopped watching. There was a spot for each TV genre – six in all. 
+
+                The Comedy spot is about an airport announcement that gets derailed because the man can’t stop laughing.
+                `,
             }
 
         },
@@ -49,8 +52,8 @@ export default function Home() {
             thumbnail: "res_thumbnail_1",
             title: "Video 1",
             des: {
-                heading: "The Moon Shot on Iphone",
-                para: "The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone. ",
+                heading: "The Moon Shot on iPhone",
+                para: "The first bespoke campaign for Apple Middle East for Eid celebrates the most iconic symbol of the season. The moon. Captured by up and coming local photographers using iPhone.",
             },
             c: "t_img_1"
 
@@ -60,8 +63,8 @@ export default function Home() {
             thumbnail: "res_thumbnail_2",
             title: "Video 2",
             des: {
-                heading: "Last Light",
-                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+                heading: "Fireworks",
+                para: `Part of a government-sponsored initiative to counter terrorism and change sentiments in Saudi Arabia. The film “Fireworks” got global acclaim as “one of the best non-profit commercials of the year”.`,
             },
             c: "t_img_2"
 
@@ -71,8 +74,11 @@ export default function Home() {
             thumbnail: "res_thumbnail_3",
             title: "Video 3",
             des: {
-                heading: "Project 3",
-                para: "Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor sit amet, consectetur.",
+                heading: "MBC1 Comedy",
+                para: `The idea for this campaign is that MBC1's content is so good that it stays with its viewers long after they’ve stopped watching. There was a spot for each TV genre – six in all. 
+
+                The Comedy spot is about an airport announcement that gets derailed because the man can’t stop laughing.
+                `,
             },
             c: "t_img_3"
         },
@@ -214,7 +220,7 @@ export default function Home() {
                                 <div className='light'>
                                     <h1>{currentDes.heading}</h1>
 
-                                    <p>{currentDes.para} </p>
+                                    <p>{currentDes.para} </p> <br />
 
                                 </div>
 
@@ -234,9 +240,8 @@ export default function Home() {
                                     </div>
 
 
-                                    <p>If you would like access to my full portfolio and don’t have a password use the <Link to="/contact"> contact form </Link>  to get in touch.</p>
 
-                                    <button>Take me to portfolio</button>
+                                    <button>Enter</button>
 
                                 </form>
 
@@ -271,7 +276,7 @@ export default function Home() {
                                         width="553"
                                         height="300"
                                         controls // Add controls if you want playback options
-                                        style={{ maxWidth: '100%', height: 'auto' }} // Make it responsive   
+                                        style={{ maxWidth: '100%' }} // Make it responsive   
                                         muted // This mutes the video
                                     >
                                         Your browser does not support the video tag.
@@ -304,7 +309,7 @@ export default function Home() {
                                             src={`${imgRoute}/${video.thumbnail}.png`}
                                             alt={`Thumbnail for ${video.title}`}
                                             style={{ width: "100px", cursor: "pointer" }}
-                                            className={`${video.c}`}
+                                            className={`${video.c} thumbnail_img`}
                                         />
 
                                         {/* <div className="thumbnail-title">
@@ -312,7 +317,7 @@ export default function Home() {
     </div> */}
 
                                         <div className="play-icon">
-                                            <img src={`${imgRoute}/play.svg`} alt='img_1'></img>
+                                            <img src={`${imgRoute}/play.svg`} className='play-icon_img' alt='img_1'></img>
                                         </div>
 
 
@@ -329,12 +334,12 @@ export default function Home() {
                             <div className='box-3'>
                                 <form>
                                     <div className='light'>
-                                    <h1>{currentDes.heading}</h1>
+                                        <h1>{currentDes.heading}</h1>
 
-<p>{currentDes.para} </p>
+                                        <p>{currentDes.para} </p>
                                     </div>
 
-                                    <button>Password for full portfolio</button>
+                                    <button>Enter</button>
 
                                 </form>
 
@@ -426,7 +431,9 @@ export default function Home() {
 
 
                             <div>
-                                <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
+                                <Link to="https://www.linkedin.com/in/safiyyah-abuhulayel/">
+                                    <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
+                                </Link>
                             </div>
 
                         </div>
@@ -469,7 +476,12 @@ export default function Home() {
                                     <h6>Connect on LinkedIn</h6>
 
                                     <div >
-                                        <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
+
+                                        <Link to="https://www.linkedin.com/in/safiyyah-abuhulayel/">
+
+                                            <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
+                                        </Link>
+
 
                                     </div>
                                 </div>

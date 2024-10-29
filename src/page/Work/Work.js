@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../component/Layout'
 import ASSET_PATHS from '../../constant'
 import './Work.css';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
     const imgRoute = ASSET_PATHS.IMG_URL
@@ -60,11 +61,13 @@ export default function Contact() {
                                 </div>
 
                                 <div className='linkedIn-btn'>
-                                    <h6>Connect on LinkedIn</h6>
 
                                     <div >
-                                        <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
 
+                                    <Link to="https://www.linkedin.com/in/safiyyah-abuhulayel/">
+
+                                        <img src={`${imgRoute}/linkedin.svg`} alt='img_1'></img>
+</Link>
                                     </div>
                                 </div>
 
