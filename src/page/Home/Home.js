@@ -12,7 +12,7 @@ export default function Home() {
     const videoData = [
 
         {
-            videoSrc: "video-player-2.mp4",
+            videoSrc: "video-player.mp4",
             thumbnail: "thumbnail_2",
             title: "Video 2",
             des: {
@@ -22,7 +22,7 @@ export default function Home() {
 
         },
         {
-            videoSrc: "video-player.mp4",
+            videoSrc: "video-player-2.mp4",
             thumbnail: "thumbnail_1",
             title: "Video 1",
             des: {
@@ -107,7 +107,7 @@ export default function Home() {
 
                         <div className='box-2'>
 
-                            <img src={`${imgRoute}/img_1.png`} alt='img_1'></img>
+                            <img src={`${imgRoute}/landing-page.jpeg`} alt='img_1'></img>
 
                         </div>
 
@@ -395,26 +395,29 @@ export default function Home() {
                         <h1>Worked With</h1>
 
                         <div className='social_box'>
-                            <div className='box'>
-                                <img src={`${imgRoute}/social_1.svg`} alt='logo' />
+
+                        <div className='box'>
+                                <img src={`${imgRoute}/social_6.jpeg`} alt='logo' />
                             </div>
 
                             <div className='box'>
-                                <img src={`${imgRoute}/social_2.svg`} alt='logo' />
+                                <img src={`${imgRoute}/social_1.jpeg`} alt='logo' />
                             </div>
 
                             <div className='box'>
-                                <img src={`${imgRoute}/social_3.svg`} alt='logo' />
+                                <img src={`${imgRoute}/social_2.jpeg`} alt='logo' />
+                            </div>
+
+                            <div className='box'>
+                                <img src={`${imgRoute}/social_3.jpeg`} alt='logo' />
                             </div>
                             <div className='box'>
-                                <img src={`${imgRoute}/social_4.svg`} alt='logo' />
+                                <img src={`${imgRoute}/social_4.jpeg`} alt='logo' />
                             </div>
                             <div className='box'>
-                                <img src={`${imgRoute}/social_5.svg`} alt='logo' />
+                                <img src={`${imgRoute}/social_5.jpeg`} alt='logo' />
                             </div>
-                            <div className='box'>
-                                <img src={`${imgRoute}/social_6.svg`} alt='logo' />
-                            </div>
+                          
                         </div>
 
                     </div>

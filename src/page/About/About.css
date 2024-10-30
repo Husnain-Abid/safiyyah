@@ -29,6 +29,7 @@
     /* Maintain aspect ratio */
     filter: grayscale(100%); /* Apply grayscale filter on hover */
     transition: filter 0.1s; /* Smooth transition */
+    object-fit: cover;
 
 }
 
@@ -94,11 +95,7 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .about-section {
-        flex-direction: column;
-        padding: 0 5vw;
 
-    }
 
     .about-section .box-1 {
         width: 100%;
@@ -110,10 +107,6 @@
         padding: 0 5vw;
     }
 
-    .about-section .box-1 .img_container img {
-        content: url('../../../public/assest/image/res_about_img.png');
-
-    }
 
 
 
@@ -127,6 +120,20 @@
 
 
 @media only screen and (max-width: 500px) {
+
+
+    .about-section {
+        flex-direction: column;
+        padding: 0 5vw;
+
+    }
+
+
+    .about-section .box-1 .img_container img {
+        content: url('../../../public/assest/image/res_about_img.png');
+
+    }
+
 
     .about-section .box-2 h1 {
         font-family: Pacifico;

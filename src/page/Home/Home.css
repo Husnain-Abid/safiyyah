@@ -61,8 +61,7 @@
     /* Apply grayscale filter on hover */
     transition: filter 0.1s;
     /* Smooth transition */
-
-
+object-fit: cover;
 }
 
 .content .section-1 .box-2 img:hover {
@@ -440,7 +439,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2vh 0;
+}
+
+.section-5 .social_box img{
+    width: 150px;
+    object-fit: contain;
 }
 
 
