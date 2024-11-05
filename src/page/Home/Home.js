@@ -218,7 +218,7 @@ export default function Home() {
                             <div className='box-3'>
 
                                 <div className='light'>
-                                    <h1>{currentDes.heading}</h1>
+                                    {/* <h1>{currentDes.heading}</h1> */}
 
                                     <p>{currentDes.para} </p> <br />
 
@@ -334,7 +334,7 @@ export default function Home() {
                             <div className='box-3'>
                                 <form>
                                     <div className='light'>
-                                        <h1>{currentDes.heading}</h1>
+                                        {/* <h1>{currentDes.heading}</h1> */}
 
                                         <p>{currentDes.para} </p>
                                     </div>
@@ -396,8 +396,8 @@ export default function Home() {
 
                         <div className='social_box'>
 
-                        <div className='box'>
-                                <img src={`${imgRoute}/social_6.jpeg`} alt='logo' />
+                            <div className='box'>
+                                <img src={`${imgRoute}/social_6.png`} alt='logo' />
                             </div>
 
                             <div className='box'>
@@ -405,19 +405,19 @@ export default function Home() {
                             </div>
 
                             <div className='box'>
-                                <img src={`${imgRoute}/social_2.jpeg`} alt='logo' />
+                                <img src={`${imgRoute}/social_2.png`} alt='logo' />
                             </div>
 
                             <div className='box'>
-                                <img src={`${imgRoute}/social_3.jpeg`} alt='logo' />
+                                <img src={`${imgRoute}/social_3.png`} alt='logo' />
                             </div>
                             <div className='box'>
-                                <img src={`${imgRoute}/social_4.jpeg`} alt='logo' />
+                                <img src={`${imgRoute}/social_4.png`} alt='logo' />
                             </div>
                             <div className='box'>
-                                <img src={`${imgRoute}/social_5.jpeg`} alt='logo' />
+                                <img src={`${imgRoute}/social_5.png`} alt='logo' />
                             </div>
-                          
+
                         </div>
 
                     </div>
