@@ -61,7 +61,7 @@ body {
 
 /* Header section start */
 .header {
-  height: 68px;
+  height: 58px;
   width: 100%;
 }
 
@@ -70,7 +70,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 68px;
+  height: 58px;
   width: 100%;
   padding: 0 10vw;
 }
@@ -115,7 +115,7 @@ body {
   .navbar .links {
     display: none;
     position: absolute;
-    top: 68px;
+    top: 58px;
     right: 0;
     background-color: white;
     width: 100%;
@@ -130,7 +130,7 @@ body {
   .navbar .links li {
     padding: 0 10vw;
     font-size: 20px;
-margin: 2vh 0;
+    margin: 2vh 0;
   }
 
   .navbar .links.show {

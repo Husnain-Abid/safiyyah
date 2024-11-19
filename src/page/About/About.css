@@ -7,7 +7,7 @@
 .about-section {
     display: flex;
     width: 100%;
-    margin: 2vh 0;
+    margin-bottom: 2vh ;
     flex-direction: column;
 }
 
@@ -66,11 +66,28 @@
 }
 
 .about-section .box-2 button {
-    background: var(--Bg-Gray-Bold, #1F2122);
-    color: white;
-    padding: 8px;
-    border-radius: 8px 12px;
-    margin: 3vh 0;
+        font-family: var(--LabelFamilySans);
+        font-size: var(--LabelSizeS);
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        padding: 8px 12px;
+        gap: var(--SpaceXXS);
+        opacity: 0px;
+        background: var(--Bg-Gray-Bold, #1F2122);
+        color: white;
+        border-radius: 8px;
+        margin: 1vh 0;
+        opacity: 1;
+        box-shadow: 0px 8px 16px 0px #0000001F;
+    
+
+
+
+
+
+
+
 }
 
 .about-section .box-2 .sparrow {
