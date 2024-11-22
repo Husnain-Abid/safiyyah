@@ -49,7 +49,7 @@ export default function Home() {
     const resVideoData = [
         {
             videoSrc: "video-player.mp4",
-            thumbnail: "res_thumbnail_1",
+            thumbnail: "thumbnail_2",
             title: "Video 1",
             des: {
                 heading: "The Moon Shot on iPhone",
@@ -60,7 +60,7 @@ export default function Home() {
         },
         {
             videoSrc: "video-player-2.mp4",
-            thumbnail: "res_thumbnail_2",
+            thumbnail: "thumbnail_1",
             title: "Video 2",
             des: {
                 heading: "Fireworks",
@@ -71,7 +71,7 @@ export default function Home() {
         },
         {
             videoSrc: "video-player.mp4",
-            thumbnail: "res_thumbnail_3",
+            thumbnail: "thumbnail_3",
             title: "Video 3",
             des: {
                 heading: "MBC1 Comedy",

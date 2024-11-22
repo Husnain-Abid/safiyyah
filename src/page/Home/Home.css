@@ -954,17 +954,17 @@ object-fit: cover;
 
     }
 
-    .content .section-3-res .box-1 .thumbnail .t_img_1 {
-        content: url('../../../public/assest/image/res_thumbnail_1.png');
+    /* .content .section-3-res .box-1 .thumbnail .t_img_1 {
+        content: url('../../../public/assest/image/thumbnail_1.png');
     }
 
     .content .section-3-res .box-1 .thumbnail .t_img_2 {
-        content: url('../../../public/assest/image/res_thumbnail_2.png');
+        content: url('../../../public/assest/image/thumbnail_2.png');
     }
 
     .content .section-3-res .box-1 .thumbnail .t_img_3 {
-        content: url('../../../public/assest/image/res_thumbnail_3.png');
-    }
+        content: url('../../../public/assest/image/thumbnail_3.png');
+    } */
 
     .content .section-3-res .box-3 form label {
         font-size: 14px;
